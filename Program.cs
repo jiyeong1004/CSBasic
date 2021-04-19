@@ -148,6 +148,22 @@ namespace CSBasic
             --number;
             Console.WriteLine(number); // 10      10
             Console.WriteLine(number); //10
+
+            int _int = 273;
+            long _long = 624235252342;
+            float _float = 52.273F;
+            double _double = 52.273;
+            char _char = '글';
+            string _string = "문자열";
+            //(273.GetType()) => 괄호 안닫아도 되는데 괄호 써주는게 좋음
+            Console.WriteLine((273).GetType());
+            Console.WriteLine(_int.GetType());
+            Console.WriteLine(_long.GetType());
+            Console.WriteLine(_float.GetType());
+            Console.WriteLine(_double.GetType());
+            Console.WriteLine(_char.GetType());
+            Console.WriteLine(_string.GetType());
+            Console.WriteLine((2211111111L).GetType());
         }
     }
 }
