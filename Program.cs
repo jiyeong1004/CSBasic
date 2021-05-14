@@ -82,6 +82,32 @@ namespace CSBasic3
                     Console.Write('*');
                 Console.Write('\n');
             }
+
+            // C#에서 문자열 관련된 메서드들은 원본을 건들지 않는다.
+            string inputString = "Potato Tomato";
+            inputString.ToUpper();  // return POTATO TOMATO
+            Console.WriteLine(inputString);  // Potato Tomato
+            Console.WriteLine(inputString.ToLower());  // potato tomato
+            Console.WriteLine(inputString);  //Potato Tomato
+
+            string foodString = "감자 고구마 토마토 치킨";
+            string[] foods = foodString.Split(new char[] { ' ' });
+            foreach(var food in foods)
+            {
+                Console.WriteLine(food);
+            }
+
+            string pathString= "D:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\Java\\jdk1.8.0_281\\bin;%JAVA_HOME%\\bin\\;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\";
+            string[] paths = pathString.Split(new char[] { ';' });
+            foreach (var path in paths)
+                Console.WriteLine(path);
+
+            string StrangeInput = " test \n         \n ";
+            Console.WriteLine("[" + StrangeInput + "]");
+            Console.WriteLine("[" + StrangeInput.Trim() + "]");
+
+            string[] foodsArray = { "감자", "고구마", "토마토" };
+            Console.WriteLine(string.Join(",", foodsArray));
         }
     }
 }
