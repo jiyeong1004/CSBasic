@@ -68,7 +68,7 @@ namespace FormPrac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(393, 337);
+            this.ClientSize = new System.Drawing.Size(404, 337);
             this.Controls.Add(this.btnMessageBox3);
             this.Controls.Add(this.btnMessageBox2);
             this.Controls.Add(this.btnMessageBox1);
