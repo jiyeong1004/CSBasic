@@ -53,7 +53,7 @@ namespace Chapter6
             public new void Method()*/
 
             public new string variable = "shadowing";
-            public override void Method()
+            public override void Method()  // 오버라이딩
             {
                 Console.WriteLine("자식의 메서드");
             }
