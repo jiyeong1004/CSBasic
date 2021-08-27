@@ -48,7 +48,7 @@ namespace Chapter6
 
         class Child : Parent
         {
-           /* 하이딩(Hiding)
+            /* 하이딩(Hiding)
             public new string variable = "shadowing";
             public new void Method()*/
 
@@ -64,23 +64,23 @@ namespace Chapter6
             Child child = new Child();
             child.Method();
             ((Parent)child).Method();
-
-            //Console.WriteLine((new Child()).variable);
-            //Console.WriteLine(((Parent)(new Child())).variable);
-
-            /*
-            List<Animal> Animals = new List<Animal>()
-            {
-                new Dog(), new Cat(), new Cat(), new Dog(),
-                new Dog(), new Cat(), new Dog(), new Dog()
-            };
-
-            foreach(var item in Animals)
-            {
-                item.Eat();
-                item.Sleep();
-                ((Cat)item).Meow();
-            }*/
         }
     }
+
+    //Console.WriteLine((new Child()).variable);
+    //Console.WriteLine(((Parent)(new Child())).variable);
+
+    /*
+    List<Animal> Animals = new List<Animal>()
+    {
+        new Dog(), new Cat(), new Cat(), new Dog(),
+        new Dog(), new Cat(), new Dog(), new Dog()
+    };
+
+    foreach(var item in Animals)
+    {
+        item.Eat();
+        item.Sleep();
+        ((Cat)item).Meow();
+    }*/
 }
